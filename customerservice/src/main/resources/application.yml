@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: customerservice
+  cloud:
+    config:
+      profile: prod
+  config:
+    import: configserver:http://localhost:8050/
+
