@@ -18,4 +18,4 @@ spring:
           enabled: true
           lower-case-service-id: true
 
-#gatewayserver-dev.yml dosyanız bu konfigurasyona göre olacak. 
+#gatewayserver-dev.yml dosyanız bu konfigurasyona göre olacak.

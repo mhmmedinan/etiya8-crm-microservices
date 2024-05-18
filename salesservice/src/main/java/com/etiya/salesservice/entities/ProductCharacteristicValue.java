@@ -20,7 +20,7 @@ public class ProductCharacteristicValue {
     private String value;
 
     @Column(name = "productId")
-    private String productId;
+    private String productOfferId;
 
     @Column(name = "characteristicId")
     private String characteristicId;
