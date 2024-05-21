@@ -19,7 +19,7 @@ public class SecurityConfig {
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         baseSecurityService.configureCoreSecurity(http);
         http.authorizeHttpRequests(
-                        req -> req
+                        req -> req.requestMatchers("/api/v1/**").permitAll()
                         .anyRequest().authenticated()
                 );
         return http.build();
