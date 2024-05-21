@@ -11,12 +11,13 @@ import io.swagger.v3.oas.annotations.Operation;
 import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
 @AllArgsConstructor
 @CrossOrigin()
-@RequestMapping("customerservice/api/v1/individualcustomers")
+@RequestMapping("api/v1/individualcustomers")
 public class IndividualCustomersController {
     private IndividualCustomerService individualCustomerService;
 
